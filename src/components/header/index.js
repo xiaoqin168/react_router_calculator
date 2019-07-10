@@ -19,7 +19,7 @@ class Header extends React.Component {
                 routerDemo: '/dist/router.html#/demo',
                 routerDemo1: '/dist/router.html#/demo1',
                 routerDemo2: '/dist/router.html#/demo2',
-
+                calculator:'/dist/calculator.html',
                 h5: '/dist/h5/ebsindex.html',
             },
             onLine: {// 自行根据服务端路径定义
@@ -27,7 +27,7 @@ class Header extends React.Component {
                 routerDemo: '/dist/router.html#/demo',
                 routerDemo1: '/dist/router.html#/demo1',
                 routerDemo2: '/dist/router.html#/demo2',
-
+                calculator:'/dist/calculator.html',
                 h5: '/dist/h5/ebsindex.html',
             },
         };
@@ -72,6 +72,12 @@ class Header extends React.Component {
                     icon="training"
                     link={links.h5}
                 />
+                <Item
+                itemid="4"
+                text="计算机功能"
+                icon="training"
+                link={links.calculator}
+            />
                 <li className="navigation-toolbar">
                     <ul>
                         <li>
