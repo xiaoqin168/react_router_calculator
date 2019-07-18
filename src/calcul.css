@@ -1,0 +1,61 @@
+.calcul{
+    /* width:400px; */
+    width:calc(25% + 9px);
+    /* height: 500px; */
+    border:1px solid black;
+    margin:0 auto;
+    padding:10px;
+}
+.calcul{
+    /* animation-iteration-count:mydiv 3; */
+    animation: mydiv 2s linear infinite;
+    -moz-animation: mydiv 2s;	/* Firefox */
+    -webkit-animation: mydiv 2s linear 2;	/* Safari 和 Chrome */
+    -o-animation: mydiv 2s; 
+}
+@keyframes mydiv
+{   
+    0%   {transform:rotate(0deg);}  
+    50%  {transform:rotate(180deg);}  
+    100% {transform:rotate(360deg);}
+}
+ .calcul input{
+     /* width: 380px; */
+     /* /width:calc(100%-5%); */
+     height: 90px;
+     /* height: calc(100%+0); */
+     font:500 30px/78px “Microsoft Yahei”;
+     text-align: right;
+    background-color: #cf6a87;   
+ }
+ .calcul .items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .calcul button{
+       width: 93px; 
+       /* width:calc(100%+5px); */
+       height: 78px; 
+      
+      flex-grow: 1;
+      background-color:#c44569;
+      font:500 20px/78px “Microsoft Yahei”;
+      transition: background-color 1s;
+    }
+
+button
+{
+animation: myfirst 2s;
+-moz-animation: myfirst 2s;	/* Firefox */
+-webkit-animation: myfirst 2s;	/* Safari 和 Chrome */
+-o-animation: myfirst 2s;	/* Opera */
+}
+@keyframes myfirst
+{
+    0%   {background: #FD7272;  top:0px;}
+    25%  {background: #FC427B;  top:100px;}
+    50%  {background: #B33771;  top:70px;}
+    75%  {background: #cf6a87;  top:50px;}
+    100% {background: #c44569; top:0px;}
+}
