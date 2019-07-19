@@ -2,6 +2,7 @@ import {CHANGE_NUM,CHANGE_SIGN} from './action'
 const defaultState = {
     value:'',
     sign:'',
+    stateHistory:'',
     statePreNum:'',
     inputStatePre:'',
     num_index:'',
@@ -14,6 +15,7 @@ export default (state = defaultState , action) => {
         case CHANGE_NUM:
             state.value = action.data;
             state.inputStatePre = action.preInput;
+            state.stateHistory = action.history;
             return Object.assign({}, state, action);
         case CHANGE_SIGN:
             state.statePreNum = action.data;
@@ -21,7 +23,8 @@ export default (state = defaultState , action) => {
             state.value = action.data;
             state.sign=action.optation;
             state.calculSateNum =action.calculNum;
-            state.calculStateOpetation=action.calculOptation
+            state.calculStateOpetation=action.calculOptation;
+            state.stateHistory = action.history;
             return Object.assign({},state,action);
         default:
             return state;
